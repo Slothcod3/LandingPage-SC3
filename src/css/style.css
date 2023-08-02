@@ -1,0 +1,75 @@
+:root{
+    --black: #000;
+    --white: #fff;
+    --gray: #e5e5e5;
+    --yellow: #fca311;
+    --blue: #14213d;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--gray);
+}
+
+.logo, .logo span{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    position: relative;
+    color: var(--blue);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.logo span{
+    position: absolute;
+    color: var(--yellow);
+    font-size: 1rem;
+    top: 10px;
+}
+
+#menuTop a{
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.hover-link {
+    position: relative;
+    padding-bottom: 5px; /* Espaço para a linha de baixo */
+    transition: color 0.3s, padding-bottom 0.3s;
+}
+.hover-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Altura da linha */
+    background-color: var(--yellow); /* Cor da linha */
+    transition: width 0.3s;
+}
+.hover-link:hover {
+    color: var(--yellow) !important; /* Cor do link ao passar o mouse */
+    padding-bottom: 0; /* Remove o espaço para a linha de baixo */
+}
+.hover-link:hover::after {
+    width: 100%; /* Expande a linha ao passar o mouse */
+}
+
+.btn-blue {
+    color: var(--blue);
+    border-color: var(--blue);
+}
+
+
+.btn-blue:hover {
+    background: var(--blue);
+    color: var(--white);
+    border-color: var(--blue);
+}
