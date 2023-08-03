@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -13,8 +13,13 @@
     <script src="https://kit.fontawesome.com/529ca5de51.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
+    <div id="contact-whatsapp">
+        <a href="" class="link">
+            <span class="hidden animation-text-right-to-left">Faça seu orçamento </span> <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <header class="w-100 position-fixed">
+        <nav class="navbar navbar-expand-lg m-0 p-0">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <p class="logo me-5">SLOTH<span>code</span></p>
@@ -25,33 +30,150 @@
                 <div class="collapse navbar-collapse" id="menuTop">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link hover-link">Home</a>
+                            <a class="nav-link hover-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hover-link" href="#">Serviços</a>
+                            <a class="nav-link hover-link" href="#about">Quem Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hover-link" href="#">Projetos</a>
+                            <a class="nav-link hover-link" href="#services">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hover-link" href="#">Quem Somos</a>
+                            <a class="nav-link hover-link" href="#projects">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hover-link">FAQ</a>
+                            <a class="nav-link hover-link" href="#">FAQ</a>
                         </li>
                     </ul>
                     <div>
-                        <button class="btn btn-outline-dark btn-blue">Faça seu orçamento <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="btn btn-outline-primary">Faça seu orçamento <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
+        <section id="home" class="d-flex flex-column h-100">
+            <div class="container my-auto">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="animation-words" data-words='["Profissionais","Modernos","Personalizados","Inovadores"]'>
+                            <h1>
+                                Crie sites <span class="word"></span>
+                            </h1>
+                        </div>
+                        <p class="color-gray fw-light fs-6">Desenvolvimento web de alta qualidade com foco no usuário</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="d-flex flex-column py-5">
+            <div class="container my-auto py-5">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h1>Quem <span class="color-blue">somos</span> <i class="fa-solid fa-people-group"></i></h1>
+                    </div>
+                    <div class="col-12">
+                        <p class="text-center fs-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet velit nec massa facilisis dictum eget id nunc. Fusce condimentum auctor odio quis pellentesque. Mauris ornare a nulla in vehicula. Fusce commodo maximus felis at euismod. Duis vehicula quam ipsum. Fusce ut lorem vitae felis venenatis tincidunt quis at leo. In cursus sollicitudin orci vel varius. Sed lacinia congue ipsum, in pharetra mi malesuada blandit. Vivamus lectus lorem, faucibus sed quam in, facilisis interdum ex. Pellentesque id nunc in massa vulputate sagittis vel nec massa. Nulla sodales sapien vel sapien sodales laoreet. Duis rutrum eget massa at vestibulum. Aliquam non eleifend diam. Sed ut varius ipsum, et imperdiet nunc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="d-flex flex-column py-5">
+            <div class="container my-auto py-5">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h1>Nossos <span class="color-blue">serviços</span> <i class="fa-solid fa-briefcase"></i></h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service border border-primary rounded p-5 text-center">
+                            <i class="fa-solid fa-user fs-1 mb-3"></i>
+                            <h3>
+                                Landing Pages
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service border border-primary rounded p-5 text-center">
+                            <i class="fa-solid fa-user fs-1 mb-3"></i>
+                            <h3>
+                                Landing Pages
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service border border-primary rounded p-5 text-center">
+                            <i class="fa-solid fa-user fs-1 mb-3"></i>
+                            <h3>
+                                Landing Pages
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="d-flex flex-column py-5">
+            <div class="container my-auto py-5">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h1>Nossos <span class="color-blue">projetos</span> <i class="fa-solid fa-laptop"></i></h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="project border border-primary rounded overflow-hidden text-center">
+                            <div class="cover mb-3">
+                                <img src="./assets/img/service1.png" alt="">
+                            </div>
+                            <div class="p-5">
+                                <h5 class="mb-3 color-blue">Projeto AVA</h5>
 
+                                <p class="fs-6 fw-light" style="text-align: justify;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet velit nec massa facilisis dictum eget id nunc. Fusce condimentum auctor odio quis pellentesque. Mauris ornare a nulla in vehicula. Fusce commodo maximus felis at euismod. Duis vehicula quam ipsum. Fusce ut lorem vitae felis venenatis tincidunt quis at leo.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="project border border-primary rounded overflow-hidden text-center">
+                            <div class="cover mb-3">
+                                <img src="./assets/img/service1.png" alt="">
+                            </div>
+                            <div class="p-5">
+                                <h5 class="mb-3 color-blue">Projeto AVA</h5>
+
+                                <p class="fs-6 fw-light" style="text-align: justify;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet velit nec massa facilisis dictum eget id nunc. Fusce condimentum auctor odio quis pellentesque. Mauris ornare a nulla in vehicula. Fusce commodo maximus felis at euismod. Duis vehicula quam ipsum. Fusce ut lorem vitae felis venenatis tincidunt quis at leo.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="project border border-primary rounded overflow-hidden text-center">
+                            <div class="cover mb-3">
+                                <img src="./assets/img/service1.png" alt="">
+                            </div>
+                            <div class="p-5">
+                                <h5 class="mb-3 color-blue">Projeto AVA</h5>
+
+                                <p class="fs-6 fw-light" style="text-align: justify;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet velit nec massa facilisis dictum eget id nunc. Fusce condimentum auctor odio quis pellentesque. Mauris ornare a nulla in vehicula. Fusce commodo maximus felis at euismod. Duis vehicula quam ipsum. Fusce ut lorem vitae felis venenatis tincidunt quis at leo.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="bg-primary">
+            <div class="container py-3">
+                <p>footer</p>
+            </div>
+        </div>
+    </footer>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/main.js"></script>
 </body>
 </html>

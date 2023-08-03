@@ -3,7 +3,8 @@
     --white: #fff;
     --gray: #e5e5e5;
     --yellow: #fca311;
-    --blue: #14213d;
+    --blue: #0d6efd;
+    --green: #39ff14;
 }
 
 *{
@@ -12,33 +13,50 @@
 
     font-family: 'Poppins', sans-serif;
 }
-
-body{
-    background-color: var(--gray);
+body,html{
+    width: 100%;
+    height: 100%;
+}
+p, h1{
+    color: var(--black);
 }
 
+/**
+    COLORS
+**/
+.color-gray{
+    color: #333;
+}
+.color-blue{
+    color: var(--blue);
+}
+/**
+    LOGO
+**/
 .logo, .logo span{
     margin: 0px;
     padding: 0px;
 }
 .logo{
     position: relative;
-    color: var(--blue);
+    color: var(--black);
     font-size: 3rem;
     font-weight: bolder;
 }
 .logo span{
     position: absolute;
-    color: var(--yellow);
+    color: var(--blue);
     font-size: 1rem;
     top: 10px;
 }
 
+/**
+    LINK
+**/
 #menuTop a{
-    color: var(--blue);
+    color: var(--black);
     font-weight: 500;
 }
-
 .hover-link {
     position: relative;
     padding-bottom: 5px; /* Espaço para a linha de baixo */
@@ -51,25 +69,164 @@ body{
     left: 0;
     width: 0;
     height: 2px; /* Altura da linha */
-    background-color: var(--yellow); /* Cor da linha */
+    background-color: var(--blue); /* Cor da linha */
     transition: width 0.3s;
 }
 .hover-link:hover {
-    color: var(--yellow) !important; /* Cor do link ao passar o mouse */
+    color: var(--blue) !important; /* Cor do link ao passar o mouse */
     padding-bottom: 0; /* Remove o espaço para a linha de baixo */
 }
 .hover-link:hover::after {
     width: 100%; /* Expande a linha ao passar o mouse */
 }
 
+/**
+    BUTTON
+**/
 .btn-blue {
     color: var(--blue);
     border-color: var(--blue);
 }
-
-
 .btn-blue:hover {
     background: var(--blue);
     color: var(--white);
     border-color: var(--blue);
+}
+.btn-yellow {
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+.btn-yellow:hover {
+    background: var(--yellow);
+    color: var(--white);
+    border-color: var(--yellow);
+}
+.btn-green {
+    color: var(--green);
+    border-color: var(--green);
+}
+.btn-green:hover {
+    background: var(--green);
+    color: var(--white);
+    border-color: var(--green);
+}
+
+/**
+    POPUP
+**/
+#contact-whatsapp{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--green);
+    cursor: pointer;
+}
+#contact-whatsapp:hover{
+    border-radius: 50px;
+}
+#contact-whatsapp .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap: 10px;
+    color: var(--white);
+    font-weight: 500;
+    text-decoration: none;
+}
+#contact-whatsapp .link i{
+    color: var(--white);
+    font-size: 2rem;
+}
+#contact-whatsapp .link .hidden{
+    display: none;
+    transition: 1s;
+}
+#contact-whatsapp:hover .link .hidden{
+    display: inline-block;
+}
+/**
+    HEADER
+**/
+header {
+    background-color: var(--white);
+    z-index: 999;
+}
+
+/**
+    MAIN
+**/
+main{
+    min-height: 100%;
+}
+
+/**
+    HOME
+**/
+#home {
+    background-color: var(--white);
+}
+
+/**
+    ABOUT
+**/
+#about {
+    background-color: var(--white);
+}
+
+/**
+    SERVICE
+**/
+#services {
+    background-color: var(--white);
+}
+#services .service{
+    background-color: var(--blue);
+    color: var(--white)
+}
+
+/**
+    PROJECTS
+**/
+#projects {
+    background-color: var(--white);
+}
+#projects .project .cover{
+    width: 100%;
+}
+#projects .project .cover img{
+    width: inherit;
+    height: auto;
+}
+/**
+    FOOTER
+**/
+footer{
+
+}
+
+/**
+    ANIMATIONS
+**/
+.animation-words h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.animation-words span{
+    color: var(--blue);
+}
+.animation-words span::after{
+    content: "|";
+    font-weight: 300;
+    animation: blink 0.7s linear infinite;
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
