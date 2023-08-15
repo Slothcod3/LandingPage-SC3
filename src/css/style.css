@@ -12,6 +12,7 @@
     margin: 0px;
 
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 body,html{
     width: 100%;
@@ -158,14 +159,13 @@ header {
 /**
     MAIN
 **/
-main{
-    min-height: 100%;
+main {
 }
-
 /**
     HOME
 **/
 #home {
+    height: 900px;
     background-color: var(--white);
 }
 
