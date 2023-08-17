@@ -19,35 +19,35 @@
         </a>
     </div>
     <header class="w-100 position-fixed">
-        <nav class="navbar navbar-expand-lg m-0 p-0">
+        <nav class="navbar navbar-expand m-0 p-0">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <p class="logo me-5">SLOTH<span>code</span></p>
+                <a class="navbar-brand mx-auto mx-md-0" href="#">
+                    <p class="logo">SLOTH<span>code</span></p>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTop" aria-controls="menuTop" aria-expanded="false">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menuTop">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link hover-link" href="#home">Home</a>
+                <div class="d-flex mb-lg-0" id="menuTop">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center align-items-lg-center">
+                        <li class="nav-item mb-3 mb-lg-0">
+                            <a class="nav-link hover-link" href="#home"> <i class="fa-brands fa-whatsapp"></i> <span>Home</span> </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-link" href="#about">Quem Somos</a>
+                        <li class="nav-item mb-3 mb-lg-0">
+                            <a class="nav-link hover-link" href="#about"> <i class="fa-brands fa-whatsapp"></i> <span>Quem Somos</span> </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-link" href="#services">Serviços</a>
+                        <li class="nav-item mb-3 mb-lg-0">
+                            <a class="nav-link hover-link" href="#services"> <i class="fa-brands fa-whatsapp"></i> <span>Serviços</span> </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link hover-link" href="#projects">Projetos</a>
+                        <li class="nav-item mb-3 mb-lg-0">
+                            <a class="nav-link hover-link" href="#projects"> <i class="fa-brands fa-whatsapp"></i> <span>Projetos</span> </a>
                         </li>
+                        <!--
                         <li class="nav-item">
                             <a class="nav-link hover-link" href="#">FAQ</a>
                         </li>
+                        -->
                     </ul>
-                    <div>
-                        <button class="btn btn-outline-primary">Faça seu orçamento <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
+                </div>
+
+                <div class="d-none d-md-flex flex-column align-items-center align-items-lg-center">
+                    <button class="btn btn-outline-primary">Faça seu orçamento <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </nav>
@@ -59,34 +59,38 @@
                     <div class="col-12 text-center">
                         <div class="animation-words" data-words='["Profissionais","Modernos","Personalizados","Inovadores"]'>
                             <h1>
-                                Crie sites <span class="word"></span>
+                                Crie sites <span class="word d-block d-sm-inline-block"></span>
                             </h1>
                         </div>
                         <p class="color-gray fw-light fs-6">Desenvolvimento web de alta qualidade com foco no usuário</p>
+                        <button class="btn btn-outline-primary px-5 mt-3">CRIE SEU SITE</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about" class="d-flex flex-column py-5">
+        <section id="about" class="d-flex flex-column">
             <div class="container my-auto py-5">
                 <div class="row">
-                    <div class="col-12 text-center mb-5">
+                    <div class="col-12 text-center">
                         <h1>Quem <span class="color-blue">somos</span> <i class="fa-solid fa-people-group"></i></h1>
                     </div>
-                    <div class="col-12">
-                        <p class="text-center fs-6">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/logo.jpg" alt="" width="500" height="500">
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                        <p class="fs-6" style="text-align: justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet velit nec massa facilisis dictum eget id nunc. Fusce condimentum auctor odio quis pellentesque. Mauris ornare a nulla in vehicula. Fusce commodo maximus felis at euismod. Duis vehicula quam ipsum. Fusce ut lorem vitae felis venenatis tincidunt quis at leo. In cursus sollicitudin orci vel varius. Sed lacinia congue ipsum, in pharetra mi malesuada blandit. Vivamus lectus lorem, faucibus sed quam in, facilisis interdum ex. Pellentesque id nunc in massa vulputate sagittis vel nec massa. Nulla sodales sapien vel sapien sodales laoreet. Duis rutrum eget massa at vestibulum. Aliquam non eleifend diam. Sed ut varius ipsum, et imperdiet nunc.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="services" class="d-flex flex-column py-5">
+        <section id="services" class="d-flex flex-column">
             <div class="container my-auto py-5">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
                         <h1>Nossos <span class="color-blue">serviços</span> <i class="fa-solid fa-briefcase"></i></h1>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 mb-3">
                         <div class="service border border-primary rounded p-5 text-center">
                             <i class="fa-solid fa-user fs-1 mb-3"></i>
                             <h3>
@@ -94,7 +98,7 @@
                             </h3>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 mb-3">
                         <div class="service border border-primary rounded p-5 text-center">
                             <i class="fa-solid fa-user fs-1 mb-3"></i>
                             <h3>
@@ -102,7 +106,7 @@
                             </h3>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 mb-3">
                         <div class="service border border-primary rounded p-5 text-center">
                             <i class="fa-solid fa-user fs-1 mb-3"></i>
                             <h3>
@@ -113,50 +117,52 @@
                 </div>
             </div>
         </section>
-        <section id="projects" class="d-flex flex-column py-5">
+        <section id="projects" class="d-flex flex-column">
             <div class="container my-auto py-5">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
                         <h1>Nossos <span class="color-blue">projetos</span> <i class="fa-solid fa-laptop"></i></h1>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 mb-3">
                         <div class="project border border-primary rounded overflow-hidden text-center">
                             <div class="cover mb-3">
                                 <img src="./assets/img/service1.png" alt="">
                             </div>
-                            <div class="p-5">
+                            <div class="p-2 p-dm-5">
                                 <h5 class="mb-3 color-blue">Projeto AVA</h5>
 
-                                <p class="fs-6 fw-light" style="text-align: justify;">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet velit nec massa facilisis dictum eget id nunc. Fusce condimentum auctor odio quis pellentesque. Mauris ornare a nulla in vehicula. Fusce commodo maximus felis at euismod. Duis vehicula quam ipsum. Fusce ut lorem vitae felis venenatis tincidunt quis at leo.</p>
+                                <p class="fs-6 fw-light d-none d-sm-block" style="text-align: justify;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+
+                    <div class="col-sm-4 mb-3">
                         <div class="project border border-primary rounded overflow-hidden text-center">
                             <div class="cover mb-3">
                                 <img src="./assets/img/service1.png" alt="">
                             </div>
-                            <div class="p-5">
+                            <div class="p-2 p-dm-5">
                                 <h5 class="mb-3 color-blue">Projeto AVA</h5>
 
-                                <p class="fs-6 fw-light" style="text-align: justify;">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet velit nec massa facilisis dictum eget id nunc. Fusce condimentum auctor odio quis pellentesque. Mauris ornare a nulla in vehicula. Fusce commodo maximus felis at euismod. Duis vehicula quam ipsum. Fusce ut lorem vitae felis venenatis tincidunt quis at leo.</p>
+                                <p class="fs-6 fw-light d-none d-sm-block" style="text-align: justify;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+
+                    <div class="col-sm-4 mb-3">
                         <div class="project border border-primary rounded overflow-hidden text-center">
                             <div class="cover mb-3">
                                 <img src="./assets/img/service1.png" alt="">
                             </div>
-                            <div class="p-5">
+                            <div class="p-2 p-dm-5">
                                 <h5 class="mb-3 color-blue">Projeto AVA</h5>
 
-                                <p class="fs-6 fw-light" style="text-align: justify;">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet velit nec massa facilisis dictum eget id nunc. Fusce condimentum auctor odio quis pellentesque. Mauris ornare a nulla in vehicula. Fusce commodo maximus felis at euismod. Duis vehicula quam ipsum. Fusce ut lorem vitae felis venenatis tincidunt quis at leo.</p>
+                                <p class="fs-6 fw-light d-none d-sm-block" style="text-align: justify;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat nisi mauris, et congue lectus efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                                 </p>
                             </div>
                         </div>
@@ -166,15 +172,17 @@
         </section>
     </main>
     <footer>
-        <div class="bg-primary">
-            <div class="container d-flex py-3 text-white ">
-                <div class="me-auto">
-                    <span class="">&copy; 2023 SLOTHCODE. Todos os direitos reservados.</span>
+        <div class="bg-black">
+            <div class="container py-3">
+                <div class="row justify-content-center text-white">
+                    <div class="col-12 mb-3 mb-md-0 text-center">
+                        <a href="#" class="text-white text-decoration-none me-3"><i class="fa-solid fa-envelope"></i> slothcode.dev@gmail.com</a>
+                        <a href="instagram.com/slothcode_" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i> @slothcode_</a>
+                    </div>
 
-                </div>
-                <div class="ms-auto">
-                    <a href="www.instagram.com/slothcode_" class="text-white text-decoration-none me-3"><i class="fa-brands fa-instagram"></i> @slothcode_</a>
-                    <a href="#" class="text-white text-decoration-none me-3"><i class="fa-solid fa-envelope"></i> slothcode@gmail.com</a>
+                    <div class="col-12 text-center">
+                        <span>© 2023 SLOTHCODE - Todos os direitos reservados.</span>
+                    </div>
                 </div>
             </div>
         </div>
